@@ -55,11 +55,12 @@ $(function() {
     // 阻止默认提交行为
     e.preventDefault()
     $.ajax({
-      url: '/api/login',
+      url: 'http://www.liulongbin.top:3007/api/login',
       method: 'POST',
       // 快速获取表单中的数据
       data: $(this).serialize(),
       success: function(res) {
+        console.log(res);
         if (res.status !== 0) {
           return layer.msg('登录失败！')
         }

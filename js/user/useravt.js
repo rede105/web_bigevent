@@ -22,7 +22,7 @@ $(function () {
 
     $('#file').on('change', function (e) {
         var file = e.target.files
-        console.log(file);
+        // console.log(file);
         if (file.length === 0) return layer.msg('没有图片上传')
 
         var file1 = e.target.files[0]
